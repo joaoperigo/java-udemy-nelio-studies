@@ -6,10 +6,20 @@ public class Product {
 	public double price;
 	public int quantity;
 	
+	// Default constructor can be created as well if needed
+	// public Product() {
+	// }
+	
 	public Product(String name, double price, int quantity) {
 		this.name = name;
 		this.price = price;
 		this.quantity = quantity;
+	}
+	
+	// OVERLOAD: the difference between two methods is the number of parameters.
+	public Product(String name, double price) {
+		this.name = name;
+		this.price = price;
 	}
 	
 	public double totalValueInStock() {
